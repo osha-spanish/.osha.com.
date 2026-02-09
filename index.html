@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entrenamiento En Línea Autorizado Por Osha - OSHA.com</title>
     
-    <!-- Meta Pixel Code -->
+    <!-- Meta Pixel Code - ACTUALIZADO -->
     <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -136,13 +136,13 @@
             background: white;
         }
         
-        /* CORRECCIÓN 2: Texto negro en las cards */
-        .course__card h4.text-primary {
-            color: #000000 !important; /* Negro en lugar del color original */
+        /* Texto negro en las cards */
+        .course__card h4 {
+            color: #000000 !important;
         }
         
         .course__card a.fw-bold {
-            color: #000000 !important; /* Negro para el enlace "Más Información" */
+            color: #000000 !important;
         }
         
         .btn {
@@ -185,7 +185,6 @@
             background: white;
         }
         
-        /* CORRECCIÓN 3: Asegurar que haya botón de compra */
         .category__card .category__summary ul {
             margin-bottom: 20px;
         }
@@ -285,7 +284,7 @@
         .col-md-6 { width: 50%; padding: 0 15px; }
         .col-lg-4 { width: 33.333%; padding: 0 15px; }
         
-        /* CORRECCIÓN 1: Navbar horizontal */
+        /* Navbar horizontal */
         @media (max-width: 992px) {
             .navbar-toggler {
                 display: block;
@@ -519,6 +518,27 @@
             font-size: 16px;
             line-height: 1.4;
         }
+        
+        /* Estilo para botones actualizados */
+        button.btn {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        button.btn-primary {
+            background: #00419e;
+            color: white !important;
+            padding: 10px 25px;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        
+        button.btn-primary:hover {
+            background: #0b86b7;
+        }
     </style>
 </head>
 <body>
@@ -535,7 +555,6 @@
             </div>
         </header>
 
-        <!-- CORRECCIÓN 1: Navbar horizontal -->
         <nav class="navmain">
             <div class="container-max">
                 <div class="navmain-navbar">
@@ -601,19 +620,18 @@
                         </div>
 
                         <div class="col-12 col-lg-6">
-                            <!-- CORRECCIÓN 2: Texto en negro para mejor visibilidad -->
                             <div class="course__card bg-white mb-3">
                                 <div class="d-flex justify-content-between align-items-center flex-wrap">
                                     <div style="flex: 2; min-width: 200px;">
-                                        <h4 style="color: #000000 !important;">Curso de Capacitación en Construcción OSHA de 10 Horas</h4>
-                                        <a href="javascript:void(0);" onclick="handleMoreInfoClick('Curso de Capacitación en Construcción OSHA de 10 Horas')" class="fw-bold" style="color: #000000 !important;">Más Información ></a>
+                                        <h4>Curso de Capacitación en Construcción OSHA de 10 Horas</h4>
+                                        <a href="javascript:void(0);" onclick="handleMoreInfoClick('Curso de Capacitación en Construcción OSHA de 10 Horas')" class="fw-bold">Más Información ></a>
                                     </div>
                                     <div class="text-end" style="flex: 1; min-width: 100px;">
                                         <h4 class="course__price--original my-0">89.00</h4>
                                         <h3 class="course__price--discount my-0">59.99</h3>
                                     </div>
                                     <div class="mt-3 mt-sm-0" style="width: 100%; text-align: center;">
-                                        <a class="btn btn-primary fw-bold px-4 py-2" href="javascript:void(0);" onclick="handleBuyClick('Curso de Capacitación en Construcción OSHA de 10 Horas', 59.99)">Comprar Ahora</a>
+                                        <button class="btn btn-primary fw-bold px-4 py-2" onclick="handleBuyClick('Curso de Capacitación en Construcción OSHA de 10 Horas', 59.99, 'USD')">Comprar Ahora</button>
                                     </div>
                                 </div>
                             </div>
@@ -621,15 +639,15 @@
                             <div class="course__card bg-white mb-3">
                                 <div class="d-flex justify-content-between align-items-center flex-wrap">
                                     <div style="flex: 2; min-width: 200px;">
-                                        <h4 style="color: #000000 !important;">Curso de Capacitación para la Industria General OSHA de 10 Horas</h4>
-                                        <a href="javascript:void(0);" onclick="handleMoreInfoClick('Curso de Capacitación para la Industria General OSHA de 10 Horas')" class="fw-bold" style="color: #000000 !important;">Más Información ></a>
+                                        <h4>Curso de Capacitación para la Industria General OSHA de 10 Horas</h4>
+                                        <a href="javascript:void(0);" onclick="handleMoreInfoClick('Curso de Capacitación para la Industria General OSHA de 10 Horas')" class="fw-bold">Más Información ></a>
                                     </div>
                                     <div class="text-end" style="flex: 1; min-width: 100px;">
                                         <h4 class="course__price--original my-0">89.00</h4>
                                         <h3 class="course__price--discount my-0">59.99</h3>
                                     </div>
                                     <div class="mt-3 mt-sm-0" style="width: 100%; text-align: center;">
-                                        <a class="btn btn-primary fw-bold px-4 py-2" href="javascript:void(0);" onclick="handleBuyClick('Curso de Capacitación para la Industria General OSHA de 10 Horas', 59.99)">Comprar Ahora</a>
+                                        <button class="btn btn-primary fw-bold px-4 py-2" onclick="handleBuyClick('Curso de Capacitación para la Industria General OSHA de 10 Horas', 59.99, 'USD')">Comprar Ahora</button>
                                     </div>
                                 </div>
                             </div>
@@ -637,15 +655,15 @@
                             <div class="course__card bg-white mb-3">
                                 <div class="d-flex justify-content-between align-items-center flex-wrap">
                                     <div style="flex: 2; min-width: 200px;">
-                                        <h4 style="color: #000000 !important;">Curso de Capacitación en Construcción OSHA de 30 Horas</h4>
-                                        <a href="javascript:void(0);" onclick="handleMoreInfoClick('Curso de Capacitación en Construcción OSHA de 30 Horas')" class="fw-bold" style="color: #000000 !important;">Más Información ></a>
+                                        <h4>Curso de Capacitación en Construcción OSHA de 30 Horas</h4>
+                                        <a href="javascript:void(0);" onclick="handleMoreInfoClick('Curso de Capacitación en Construcción OSHA de 30 Horas')" class="fw-bold">Más Información ></a>
                                     </div>
                                     <div class="text-end" style="flex: 1; min-width: 100px;">
                                         <h4 class="course__price--original my-0">189.00</h4>
                                         <h3 class="course__price--discount my-0">159.99</h3>
                                     </div>
                                     <div class="mt-3 mt-sm-0" style="width: 100%; text-align: center;">
-                                        <a class="btn btn-primary fw-bold px-4 py-2" href="javascript:void(0);" onclick="handleBuyClick('Curso de Capacitación en Construcción OSHA de 30 Horas', 159.99)">Comprar Ahora</a>
+                                        <button class="btn btn-primary fw-bold px-4 py-2" onclick="handleBuyClick('Curso de Capacitación en Construcción OSHA de 30 Horas', 159.99, 'USD')">Comprar Ahora</button>
                                     </div>
                                 </div>
                             </div>
@@ -653,15 +671,15 @@
                             <div class="course__card bg-white mb-3">
                                 <div class="d-flex justify-content-between align-items-center flex-wrap">
                                     <div style="flex: 2; min-width: 200px;">
-                                        <h4 style="color: #000000 !important;">Curso de Capacitación para la Industria General OSHA de 30 Horas</h4>
-                                        <a href="javascript:void(0);" onclick="handleMoreInfoClick('Curso de Capacitación para la Industria General OSHA de 30 Horas')" class="fw-bold" style="color: #000000 !important;">Más Información ></a>
+                                        <h4>Curso de Capacitación para la Industria General OSHA de 30 Horas</h4>
+                                        <a href="javascript:void(0);" onclick="handleMoreInfoClick('Curso de Capacitación para la Industria General OSHA de 30 Horas')" class="fw-bold">Más Información ></a>
                                     </div>
                                     <div class="text-end" style="flex: 1; min-width: 100px;">
                                         <h4 class="course__price--original my-0">189.00</h4>
                                         <h3 class="course__price--discount my-0">159.99</h3>
                                     </div>
                                     <div class="mt-3 mt-sm-0" style="width: 100%; text-align: center;">
-                                        <a class="btn btn-primary fw-bold px-4 py-2" href="javascript:void(0);" onclick="handleBuyClick('Curso de Capacitación para la Industria General OSHA de 30 Horas', 159.99)">Comprar Ahora</a>
+                                        <button class="btn btn-primary fw-bold px-4 py-2" onclick="handleBuyClick('Curso de Capacitación para la Industria General OSHA de 30 Horas', 159.99, 'USD')">Comprar Ahora</button>
                                     </div>
                                 </div>
                             </div>
@@ -701,9 +719,8 @@
                                 </ul>
                                 <h5 class="on-sale text-center"><span class="fw-normal">¡En Oferta Ahora! </span><s><span class="fw-normal">$89</span></s> $59.99</h5>
                                 
-                                <!-- CORRECCIÓN 3: Agregar botón de compra para OSHA 10 horas -->
                                 <div class="mt-3 text-center">
-                                    <a class="btn btn-primary w-100 py-2 fw-bold" href="javascript:void(0);" onclick="handleBuyClick('Capacitación de 10 Horas de OSHA', 59.99)">Comprar Ahora</a>
+                                    <button class="btn btn-primary w-100 py-2 fw-bold" onclick="handleBuyClick('Capacitación de 10 Horas de OSHA', 59.99, 'USD')">Comprar Ahora</button>
                                 </div>
                             </div>
                         </div>
@@ -718,8 +735,8 @@
                                 </ul>
                                 <h5 class="on-sale text-center"><span class="fw-normal">¡En Oferta Ahora! </span><s><span class="fw-normal">$189</span></s> $159.99</h5>
                                 <div class="mt-3">
-                                    <a class="btn btn-primary w-100 py-2 fw-bold" href="javascript:void(0);" onclick="handleBuyClick('30 Horas Construcción', 159.99)">Comprar 30 Horas Construcción</a>
-                                    <a class="btn btn-primary w-100 py-2 fw-bold mt-2" href="javascript:void(0);" onclick="handleBuyClick('30 Horas Industria General', 159.99)">Comprar 30 Horas Industria General</a>
+                                    <button class="btn btn-primary w-100 py-2 fw-bold" onclick="handleBuyClick('30 Horas Construcción', 159.99, 'USD')">Comprar 30 Horas Construcción</button>
+                                    <button class="btn btn-primary w-100 py-2 fw-bold mt-2" onclick="handleBuyClick('30 Horas Industria General', 159.99, 'USD')">Comprar 30 Horas Industria General</button>
                                 </div>
                             </div>
                         </div>
@@ -732,9 +749,9 @@
                                     <li><strong>Certificado de Finalización</strong></li>
                                 </ul>
                                 <div class="mt-3">
-                                    <a class="btn btn-primary w-100 py-2 fw-bold" href="javascript:void(0);" onclick="handleBuyClick('HAZWOPER 40-Horas', 234.99)">HAZWOPER 40-Horas</a>
-                                    <a class="btn btn-primary w-100 py-2 fw-bold mt-2" href="javascript:void(0);" onclick="handleBuyClick('HAZWOPER 24-Horas', 179.99)">HAZWOPER 24-Horas</a>
-                                    <a class="btn btn-primary w-100 py-2 fw-bold mt-2" href="javascript:void(0);" onclick="handleBuyClick('HAZWOPER 8-Horas', 49.00)">HAZWOPER 8-Horas</a>
+                                    <button class="btn btn-primary w-100 py-2 fw-bold" onclick="handleBuyClick('HAZWOPER 40-Horas', 234.99, 'USD')">HAZWOPER 40-Horas</button>
+                                    <button class="btn btn-primary w-100 py-2 fw-bold mt-2" onclick="handleBuyClick('HAZWOPER 24-Horas', 179.99, 'USD')">HAZWOPER 24-Horas</button>
+                                    <button class="btn btn-primary w-100 py-2 fw-bold mt-2" onclick="handleBuyClick('HAZWOPER 8-Horas', 49.00, 'USD')">HAZWOPER 8-Horas</button>
                                 </div>
                             </div>
                         </div>
@@ -756,7 +773,7 @@
                                     <h4 class="course__price--discount my-0">59.99</h4>
                                 </div>
                                 <div class="text-center mt-3">
-                                    <a class="btn btn-primary py-2 fw-bold" href="javascript:void(0);" onclick="handleBuyClick('OSHA 10 Horas Industria General', 59.99)">Comprar Ahora</a>
+                                    <button class="btn btn-primary py-2 fw-bold" onclick="handleBuyClick('OSHA 10 Horas Industria General', 59.99, 'USD')">Comprar Ahora</button>
                                 </div>
                             </div>
                             <div class="course__card p-4 mt-3">
@@ -766,7 +783,7 @@
                                     <h4 class="course__price--discount my-0">59.99</h4>
                                 </div>
                                 <div class="text-center mt-3">
-                                    <a class="btn btn-primary py-2 fw-bold" href="javascript:void(0);" onclick="handleBuyClick('OSHA 10 Horas Construcción', 59.99)">Comprar Ahora</a>
+                                    <button class="btn btn-primary py-2 fw-bold" onclick="handleBuyClick('OSHA 10 Horas Construcción', 59.99, 'USD')">Comprar Ahora</button>
                                 </div>
                             </div>
                         </div>
@@ -780,7 +797,7 @@
                                     <h4 class="course__price--discount my-0">159.99</h4>
                                 </div>
                                 <div class="text-center mt-3">
-                                    <a class="btn btn-primary py-2 fw-bold" href="javascript:void(0);" onclick="handleBuyClick('OSHA 30 Horas Construcción', 159.99)">Comprar Ahora</a>
+                                    <button class="btn btn-primary py-2 fw-bold" onclick="handleBuyClick('OSHA 30 Horas Construcción', 159.99, 'USD')">Comprar Ahora</button>
                                 </div>
                             </div>
                             <div class="course__card p-4 mt-3">
@@ -790,7 +807,7 @@
                                     <h4 class="course__price--discount my-0">159.99</h4>
                                 </div>
                                 <div class="text-center mt-3">
-                                    <a class="btn btn-primary py-2 fw-bold" href="javascript:void(0);" onclick="handleBuyClick('OSHA 30 Horas Industria General', 159.99)">Comprar Ahora</a>
+                                    <button class="btn btn-primary py-2 fw-bold" onclick="handleBuyClick('OSHA 30 Horas Industria General', 159.99, 'USD')">Comprar Ahora</button>
                                 </div>
                             </div>
                         </div>
@@ -803,7 +820,7 @@
                                     <h4 class="course__price--discount my-0">49</h4>
                                 </div>
                                 <div class="text-center mt-3">
-                                    <a class="btn btn-primary py-2 fw-bold" href="javascript:void(0);" onclick="handleBuyClick('HAZWOPER 8-Horas Refuerzo', 49.00)">Comprar Ahora</a>
+                                    <button class="btn btn-primary py-2 fw-bold" onclick="handleBuyClick('HAZWOPER 8-Horas Refuerzo', 49.00, 'USD')">Comprar Ahora</button>
                                 </div>
                             </div>
                             <div class="course__card p-4 mt-3">
@@ -812,7 +829,7 @@
                                     <h4 class="course__price--discount my-0">179.99</h4>
                                 </div>
                                 <div class="text-center mt-3">
-                                    <a class="btn btn-primary py-2 fw-bold" href="javascript:void(0);" onclick="handleBuyClick('HAZWOPER 24-Horas', 179.99)">Comprar Ahora</a>
+                                    <button class="btn btn-primary py-2 fw-bold" onclick="handleBuyClick('HAZWOPER 24-Horas', 179.99, 'USD')">Comprar Ahora</button>
                                 </div>
                             </div>
                             <div class="course__card p-4 mt-3">
@@ -822,7 +839,7 @@
                                     <h4 class="course__price--discount my-0">234.99</h4>
                                 </div>
                                 <div class="text-center mt-3">
-                                    <a class="btn btn-primary py-2 fw-bold" href="javascript:void(0);" onclick="handleBuyClick('HAZWOPER 40-Horas', 234.99)">Comprar Ahora</a>
+                                    <button class="btn btn-primary py-2 fw-bold" onclick="handleBuyClick('HAZWOPER 40-Horas', 234.99, 'USD')">Comprar Ahora</button>
                                 </div>
                             </div>
                         </div>
@@ -951,27 +968,38 @@
             return false;
         }
         
-        // Función para rastrear compras con Meta Pixel
-        function trackPurchase(productName, value, currency = 'USD') {
-            fbq('track', 'Purchase', {
-                value: value,
-                currency: currency,
-                content_name: productName,
-                content_type: 'product'
-            });
-            console.log('Evento Purchase registrado para:', productName, 'Valor:', value, currency);
-        }
-        
-        // Función para manejar clics en botones de compra
-        function handleBuyClick(productName, price) {
-            // 1. Rastrear la compra en Meta Pixel
-            trackPurchase(productName, price);
+        // Función principal para manejar clics en compra - FORMATO CORREGIDO
+        function handleBuyClick(productName, price, currency = 'USD') {
+            // Asegurar que el precio sea un número
+            const numericPrice = parseFloat(price);
             
-            // 2. Redirigir a WhatsApp con el mensaje de compra
-            const message = `Quiero comprar ${productName} - $${price}`;
-            redirectToWhatsApp(message);
+            // 1. Rastrear la compra en Meta Pixel con parámetros CORRECTOS
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'Purchase', {
+                    value: numericPrice,               // Número (ej: 59.99) - REQUERIDO
+                    currency: currency,               // String (ej: 'USD') - REQUERIDO
+                    content_name: productName,        // String
+                    content_type: 'product',          // String
+                    content_category: 'Formación Online' // Categoría adicional
+                });
+                
+                console.log('✅ Evento Purchase enviado a Meta Pixel:', {
+                    value: numericPrice,
+                    currency: currency,
+                    content_name: productName
+                });
+            } else {
+                console.error('❌ fbq no está definido. Meta Pixel no está cargado.');
+            }
             
-            // 3. Evitar que el enlace navegue
+            // 2. Redirigir a WhatsApp
+            const message = `Quiero comprar ${productName} - $${numericPrice}`;
+            setTimeout(() => {
+                redirectToWhatsApp(message);
+            }, 100); // Pequeño delay para asegurar que se envíe el evento
+            
+            // 3. Evitar comportamiento por defecto
+            event.preventDefault();
             return false;
         }
         
